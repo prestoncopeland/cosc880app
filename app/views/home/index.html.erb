@@ -1,6 +1,143 @@
-<h3>Home</h3>
+
 <% if !current_user.nil? and current_user.admin? %>
   <% @users.each do |user| %>
     <p>User: <%=link_to user.email, user %> Role: <%= user.role unless user.role.nil? %></p>
   <% end %>
 <% end %>
+
+<div class="container">
+  <div class="row clearfix">
+    <div class="col-md-12 column">
+
+      <div class="row clearfix">
+        <div class="col-md-12 column">
+          <div class="page-header">
+            <h1>
+              TOWSON COMPUTER SCIENCE SCHOLARSHIP <p><small>Expand your horizons, byte by byte</small></p>
+            </h1>
+          </div>
+        </div>
+      </div>
+      <div class="carousel slide" id="carousel-221358">
+        <ol class="carousel-indicators">
+          <li data-slide-to="0" data-target="#carousel-221358">
+          </li>
+          <li data-slide-to="1" data-target="#carousel-221358">
+          </li>
+          <li data-slide-to="2" data-target="#carousel-221358" class="active">
+          </li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="item">
+            <img alt="" src="http://lorempixel.com/1600/500/sports/1" />
+            <div class="carousel-caption">
+              <h4>
+                Because you're smart
+              </h4>
+              <p>
+                Some text.
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <img alt="" src="http://lorempixel.com/1600/500/sports/2" />
+            <div class="carousel-caption">
+              <h4>
+                Because you're ambitious
+              </h4>
+              <p>
+                Some text.
+              </p>
+            </div>
+          </div>
+          <div class="item active">
+            <img alt="" src="http://lorempixel.com/1600/500/sports/3" />
+            <div class="carousel-caption">
+              <h4>
+                Because you're worth it
+              </h4>
+              <p>
+                Some text.
+              </p>
+            </div>
+          </div>
+        </div> <a class="left carousel-control" href="#carousel-221358" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#carousel-221358" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+      </div>
+    </div>
+  </div>
+  <div class="row clearfix">
+    <div class="col-md-12 column">
+      <div class="row clearfix">
+        <div class="col-md-8 column">
+          <div class="row clearfix">
+            <div class="col-md-12 column">
+              <h2>
+                THE SCHOLARSHIP
+              </h2>
+              <p>
+               Professor Dehlinger's won it. Professor Kaza's won it--twice. Want to join the cool club? Apply today!
+              </p>
+            </div>
+          </div>
+          <div class="row clearfix">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 column">
+          <div class="panel-group" id="panel-886537">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                 <a class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-886537" href="#panel-element-508461">STUDENTS</a>
+              </div>
+              <div id="panel-element-508461" class="panel-collapse collapse">
+                <div class="panel-body">
+                  Start an application
+                </div>
+                <div class="panel-body">
+                  Continue an application
+                </div>
+                <div class="panel-body">
+                  View your submission status
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                 <a class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-886537" href="#panel-element-40794">PROFESSORS</a>
+              </div>
+              <div id="panel-element-40794" class="panel-collapse collapse">
+                <div class="panel-body">
+                  Evaluate a student
+                </div>
+                <div class="panel-body">
+                  View pending evaluations
+                </div>
+                <div class="panel-body">
+                  View all evaluations
+                </div>
+              </div>
+            </div>
+            <% if user_signed_in? && current_user.admin? %>
+
+
+      <div class="panel-group" id="panel-181703">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+             <a class="panel-title" data-toggle="collapse" data-parent="#panel-181703" href="#panel-element-524255">ADMINISTRATOR</a>
+          </div>
+          <div id="panel-element-524255" class="panel-collapse collapse in">
+            <div class="panel-body">
+              Proceed to site administrator dashboard
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+            <% end %>
+          </div><img alt="140x140" src="http://lorempixel.com/140/140/" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
