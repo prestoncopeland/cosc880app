@@ -11,10 +11,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140310142334) do
+ActiveRecord::Schema.define(version: 20140311183052) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "cyber_applications", force: true do |t|
+    t.string  "first"
+    t.string  "middle"
+    t.string  "last"
+    t.integer "tu_id"
+    t.string  "email"
+    t.string  "alternate_email"
+    t.string  "phone_number"
+    t.boolean "is_citizen"
+    t.string  "signed_name"
+    t.integer "user_id"
+  end
+
+  add_index "cyber_applications", ["user_id"], name: "index_cyber_applications_on_user_id", using: :btree
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false
